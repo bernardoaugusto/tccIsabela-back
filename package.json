@@ -10,7 +10,11 @@
     "migration:revert": "typeorm migration:revert",
     "test": "jest",
     "clean-jest": "jest --clearCache",
-    "tdd": "jest --watch --verbose=true"
+    "tdd": "jest --watch --verbose=true",
+    "clean-database": "npm run typeorm schema:drop && npm run typeorm migration:run",
+    "migration:generate": "npm run typeorm migration:generate -- -n",
+    "migration:run": "npm run typeorm migration:run",
+    "migration:show": "npm run typeorm migration:show"
   },
   "dependencies": {
     "aws-sdk": "^2.720.0",
