@@ -1,36 +1,13 @@
-<h3 align="center">GoBarber</h3>
 
-<div align="center">
-
-</div>
-
----
-
-<p align="center"> Project developed with the mentoring of <a href="https://github.com/diego3g">Diego Fernandes </a>
-    <br>
-</p>
-
-## 📝 Contents
-
-- [About](#about)
-- [Get-Started](#getting_started)
-- [Tests](#tests)
-- [Run in dev](#deployment)
-
-- [Integrations](#acknowledgement)
-
-## 🧐 About <a name = "about"></a>
-
-Project development in GoStack of RocketSeat
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
 To run in your machine, follow the steps below.
 
 ```
-git clone https://github.com/JoaoRabelo98/gobarbernode.git
+git clone https://github.com/bernardoaugusto/tccIsabela-back
 
-cd gobarbernode
+cd tccIsabela-back
 
 yarn
 
@@ -52,11 +29,3 @@ To tests in your machine, run the command below.
 ```
 yarn test
 ```
-
-## 🎉 Integrations and Databases <a name = "acknowledgement"></a>
-
-- [Amazon SES](https://github.com/JoaoRabelo98/gobarbernode/blob/master/src/shared/container/providers/MailProvider/implementations/SESMailProvider.ts)
-- [Amazon S3](https://github.com/JoaoRabelo98/gobarbernode/blob/master/src/shared/container/providers/StorageProvider/implementations/S3StorageProvider.ts)
-- [Postgres](https://github.com/JoaoRabelo98/gobarbernode/blob/master/src/modules/users/infra/typeorm/repositories/UsersRepository.ts)
-- [MonboDB](https://github.com/JoaoRabelo98/gobarbernode/blob/master/src/modules/notifications/infra/typeorm/repositories/NotificationsRepository.ts)
-- [Redis](https://github.com/JoaoRabelo98/gobarbernode/blob/master/src/shared/container/providers/CacheProvider/implementations/RedisCacheProvider.ts)

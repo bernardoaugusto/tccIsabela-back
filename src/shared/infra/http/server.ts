@@ -8,6 +8,7 @@ import { errors } from 'celebrate';
 
 import uploadConfig from '@config/upload';
 import AppError from '@shared/errors/AppError';
+import loop from '../../../bora/loop';
 
 import routes from './routes';
 
@@ -44,3 +45,5 @@ app.listen(3333, () => {
   // eslint-disable-next-line no-console
   console.log('😁👌 Server started on port 3333 😁👌');
 });
+
+setInterval(loop, 1000);
