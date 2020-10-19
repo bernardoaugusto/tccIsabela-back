@@ -1,4 +1,6 @@
-const loop = (): void => {
+import axios from 'axios';
+
+const loop = async (): Promise<void> => {
   const today = new Date();
   const h = today.getHours();
   const m = today.getMinutes();
