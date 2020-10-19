@@ -47,14 +47,14 @@ app.listen(3333, () => {
   console.log('😁👌 Server started on port 3333 😁👌');
 });
 
-axios
-  .post(
-    'http://server.bora-iot.com/device/secret/b21dcc851757c70dc42f825c95f8970410926a73a8b5aeb14e92c4f23aab25f0/data/variavel?value=1',
-  )
-  .then(function (response) {
-    console.log(response.data);
-  })
-  .catch(function (error) {
-    console.log(error);
-  });
-// await setInterval(loop, 1000);
+// axios
+//   .post(
+//     'http://server.bora-iot.com/device/secret/b21dcc851757c70dc42f825c95f8970410926a73a8b5aeb14e92c4f23aab25f0/data/variavel?value=1',
+//   )
+//   .then(function (response) {
+//     console.log(response.data);
+//   })
+//   .catch(function (error) {
+//     console.log(error);
+//   });
+setInterval(loop, 2000);
