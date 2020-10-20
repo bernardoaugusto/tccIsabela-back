@@ -24,10 +24,25 @@ const loop = async (): Promise<void> => {
   const day = today.getDate();
   const month = today.getMonth() + 1;
   const year = today.getFullYear();
-  const hour = today.getHours() + 3;
-  // const hour = 3;
+  let hour = today.getHours();
+  const minutes = today.getMinutes();
+  const seconds = today.getSeconds();
 
-  console.log(`${day}-${month}-${year} ${hour}:00:00`);
+  console.log(`${day}-${month}-${year} ${hour}:${minutes}:${seconds}`);
+
+  switch (hour) {
+    case 21:
+      hour = 0;
+      break;
+    case 22:
+      hour = 1;
+      break;
+    case 23:
+      hour = 2;
+      break;
+    default:
+      hour += 3;
+  }
 
   if (aux !== hour) {
     aux = hour;
