@@ -9,7 +9,7 @@ let aux: number | null = null;
 export const plataformaBora = async (value: 0 | 1): Promise<void> => {
   axios
     .post(
-      `http://server.bora-iot.com/device/secret/b21dcc851757c70dc42f825c95f8970410926a73a8b5aeb14e92c4f23aab25f0/data/variavel?value=${value}`,
+      `http://server.bora-iot.com/device/secret/a2c5d4788b2d9b8ddd0400cbc37d3ccbaa839bcd4026280fea279b9f47100464/data/ligaSistema?value=${value}`,
     )
     .then(response => {
       console.log(response.data);
